@@ -101,6 +101,7 @@ header {
     color: black;
 }
 
+/* MAIN CONTENT STYLES */
 .container {
     width: 800px;
     margin: 0 auto;
@@ -147,6 +148,50 @@ header {
     justify-content: center;
 }
 
+
+/* BOX STYLES */
+
+#box1 {
+    background: teal;
+}
+
+#box2 {
+    background-color: gold;
+}
+
+#box3 {
+    background-color: cadetblue;
+}
+
+#box4 {
+    background-color: coral;
+}
+
+#box5 {
+    background-color: crimson;
+}
+
+#box6 {
+    background-color: forestgreen;
+}
+
+#box7 {
+    background-color: darkorchid;
+}
+
+#box8 {
+    background-color: hotpink;
+}
+
+#box9 {
+    background-color: indigo;
+}
+
+#box10 {
+    background-color: dodgerblue;
+}
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -160,7 +205,7 @@ header {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+/* FOOTER STYLES */
 footer {
     width: 100%;
     background: black;
