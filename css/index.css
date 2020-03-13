@@ -101,6 +101,11 @@ header {
     color: black;
 }
 
+.nav-bar a:hover {
+    color: rgb(33, 170, 216);
+    transition: color ease-in-out .4s;
+}
+
 /* MAIN CONTENT STYLES */
 .container {
     width: 800px;
@@ -225,6 +230,10 @@ footer nav a {
     text-decoration: none;
 }
 
+footer nav a:hover {
+    color: rgb(33, 170, 216);
+    transition: color ease-in-out .4s;
+}
 
 /* ABOUT PAGE STYLES */
 
@@ -267,8 +276,69 @@ footer nav a {
     padding: 2% 6%;
     border-radius: 8px;
     font-size: 1em;
+    background-color: white;
+    /* width: 34%; */
+}
+
+.about-main button:hover {
+    background-color: rgb(33, 170, 216);
+    color: white;
+    border-color: lightcyan;
+    transition: background-color ease-in-out .4s, border-color ease-in-out .3s;
 }
 
 .about-pitch {
     padding: 4% 2%;
+}
+
+
+/* MOBILE MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+    .top-content, .middle-content, .bottom-content {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .middle-content .boxes .box {
+        width: 200px;
+        height: 200px;
+    }
+
+    .top-content .text-container, .text-container {
+        width: 100%;
+        padding: 4%;
+    }
+
+    .about-main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    }
+
+    .about-main section {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+    }
+    .about-main h3, .about-main p {
+        padding: 3% 4%;
+    }
+
+    .about-main button {
+        width: 80%;
+        align-self: center;
+    }
+
+    .about-pitch {
+        padding: 6% 4%;
+    }
+
+    footer nav {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
