@@ -54,7 +54,7 @@ table {
 }
 
 html, body {
-    height: 100%;
+    height: auto;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -100,11 +100,6 @@ header {
     text-decoration: none;
     color: black;
 }
-
-.jumbo {
-    
-}
-
 
 .container {
     width: 800px;
@@ -183,4 +178,52 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/* ABOUT PAGE STYLES */
+
+
+.about-header {
+    border-bottom: 1px dashed;
+    height: 400px;
+}
+
+.about-summary {
+    width: 95%;
+    align-self: center;
+}
+
+.about-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 1%;
+    height: 950px;
+}
+
+.about-main section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 46%;
+    height: 430px;
+    padding-bottom: 2%;
+    border-bottom: 1px dashed;
+}
+
+.about-main img {
+   width: 100%;
+}
+
+.about-main button {
+    border: 2px solid black;
+    padding: 2% 6%;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.about-pitch {
+    padding: 4% 2%;
 }
