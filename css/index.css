@@ -49,10 +49,12 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width: 100%;
+    /* border: 2px solid red !important; */
 }
 
 html, body {
-    height: 100%;
+    height: auto;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -66,6 +68,45 @@ p {
     line-height: 1.4;
 }
 
+/* HEADER STYLES */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 270px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar .logo {
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-bar nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 50px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar a:hover {
+    color: rgb(33, 170, 216);
+    transition: color ease-in-out .4s;
+}
+
+/* MAIN CONTENT STYLES */
 .container {
     width: 800px;
     margin: 0 auto;
@@ -112,6 +153,50 @@ p {
     justify-content: center;
 }
 
+
+/* BOX STYLES */
+
+#box1 {
+    background: teal;
+}
+
+#box2 {
+    background-color: gold;
+}
+
+#box3 {
+    background-color: cadetblue;
+}
+
+#box4 {
+    background-color: coral;
+}
+
+#box5 {
+    background-color: crimson;
+}
+
+#box6 {
+    background-color: forestgreen;
+}
+
+#box7 {
+    background-color: darkorchid;
+}
+
+#box8 {
+    background-color: hotpink;
+}
+
+#box9 {
+    background-color: indigo;
+}
+
+#box10 {
+    background-color: dodgerblue;
+}
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,7 +210,7 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+/* FOOTER STYLES */
 footer {
     width: 100%;
     background: black;
@@ -143,4 +228,117 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover {
+    color: rgb(33, 170, 216);
+    transition: color ease-in-out .4s;
+}
+
+/* ABOUT PAGE STYLES */
+
+
+.about-header {
+    border-bottom: 1px dashed;
+    height: 400px;
+}
+
+.about-summary {
+    width: 95%;
+    align-self: center;
+}
+
+.about-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 1%;
+    height: 950px;
+}
+
+.about-main section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 46%;
+    height: 430px;
+    padding-bottom: 2%;
+    border-bottom: 1px dashed;
+}
+
+.about-main img {
+   width: 100%;
+}
+
+.about-main button {
+    border: 2px solid black;
+    padding: 2% 6%;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: white;
+    /* width: 34%; */
+}
+
+.about-main button:hover {
+    background-color: rgb(33, 170, 216);
+    color: white;
+    border-color: lightcyan;
+    transition: background-color ease-in-out .4s, border-color ease-in-out .3s;
+}
+
+.about-pitch {
+    padding: 4% 2%;
+}
+
+
+/* MOBILE MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+    .top-content, .middle-content, .bottom-content {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .middle-content .boxes .box {
+        width: 200px;
+        height: 200px;
+    }
+
+    .top-content .text-container, .text-container {
+        width: 100%;
+        padding: 4%;
+    }
+
+    .about-main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    }
+
+    .about-main section {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+    }
+    .about-main h3, .about-main p {
+        padding: 3% 4%;
+    }
+
+    .about-main button {
+        width: 80%;
+        align-self: center;
+    }
+
+    .about-pitch {
+        padding: 6% 4%;
+    }
+
+    footer nav {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
